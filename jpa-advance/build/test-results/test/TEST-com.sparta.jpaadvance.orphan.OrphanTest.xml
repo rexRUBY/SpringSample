@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sparta.jpaadvance.orphan.OrphanTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-08-27T20:05:35" hostname="t2023-m0073ui-MacBookAir.local" time="0.379">
+  <properties/>
+  <testcase name="연관관계 제거" classname="com.sparta.jpaadvance.orphan.OrphanTest" time="0.379"/>
+  <system-out><![CDATA[05:05:33.212 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.sparta.jpaadvance.orphan.OrphanTest]: OrphanTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+05:05:33.266 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.sparta.jpaadvance.JpaAdvanceApplication for test class com.sparta.jpaadvance.orphan.OrphanTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2024-08-28T05:05:33.485+09:00  INFO 42901 --- [jpa-advance] [    Test worker] c.sparta.jpaadvance.orphan.OrphanTest    : Starting OrphanTest using Java 17.0.11 with PID 42901 (started by t2023-m0073 in /Users/t2023-m0073/Desktop/Sparta/jpa-advance)
+2024-08-28T05:05:33.485+09:00  INFO 42901 --- [jpa-advance] [    Test worker] c.sparta.jpaadvance.orphan.OrphanTest    : No active profile set, falling back to 1 default profile: "default"
+2024-08-28T05:05:33.758+09:00  INFO 42901 --- [jpa-advance] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-28T05:05:33.781+09:00  INFO 42901 --- [jpa-advance] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2024-08-28T05:05:34.021+09:00  INFO 42901 --- [jpa-advance] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-28T05:05:34.043+09:00  INFO 42901 --- [jpa-advance] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-28T05:05:34.059+09:00  INFO 42901 --- [jpa-advance] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-28T05:05:34.189+09:00  INFO 42901 --- [jpa-advance] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-28T05:05:34.203+09:00  INFO 42901 --- [jpa-advance] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-28T05:05:34.373+09:00  INFO 42901 --- [jpa-advance] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a139347
+2024-08-28T05:05:34.374+09:00  INFO 42901 --- [jpa-advance] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-28T05:05:34.850+09:00  INFO 42901 --- [jpa-advance] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-28T05:05:34.892+09:00  INFO 42901 --- [jpa-advance] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-28T05:05:34.969+09:00  WARN 42901 --- [jpa-advance] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-28T05:05:35.315+09:00  INFO 42901 --- [jpa-advance] [    Test worker] c.sparta.jpaadvance.orphan.OrphanTest    : Started OrphanTest in 1.95 seconds (process running for 2.487)
+Hibernate: 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.name=?
+user.getName() = Robbie
+Hibernate: 
+    select
+        fl1_0.user_id,
+        fl1_0.id,
+        fl1_0.name,
+        fl1_0.price 
+    from
+        food fl1_0 
+    where
+        fl1_0.user_id=?
+food.getName() = 고구마 피자
+food.getName() = 아보카도 피자
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
