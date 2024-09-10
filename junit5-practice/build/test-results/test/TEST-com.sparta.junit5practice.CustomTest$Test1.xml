@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="주제 별로 테스트를 그룹지어서 파악하기 좋습니다." tests="2" skipped="0" failures="0" errors="0" timestamp="2024-09-10T06:54:48" hostname="t2023-m0073ui-MacBookAir.local" time="0.009">
+  <properties/>
+  <testcase name="Test1 - test1()" classname="com.sparta.junit5practice.CustomTest$Test1" time="0.007"/>
+  <testcase name="Test1 - test2()" classname="com.sparta.junit5practice.CustomTest$Test1" time="0.001"/>
+  <system-out><![CDATA[Test1.test1
+Test1.test2
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
